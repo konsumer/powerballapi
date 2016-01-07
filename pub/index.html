@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+  <title>powerball</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+</head>
+<body ng-app="app" ng-controller="HomeCtrl">
+
+<div class="row">
+  <div class="col s1">A</div>
+  <div class="input-field col s1"><input lengthtwo maxlength="2" size="2" type="text" ng-model="numbers[0][0]"></div>
+  <div class="input-field col s1"><input lengthtwo maxlength="2" size="2" type="text" ng-model="numbers[0][1]"></div>
+  <div class="input-field col s1"><input lengthtwo maxlength="2" size="2" type="text" ng-model="numbers[0][2]"></div>
+  <div class="input-field col s1"><input lengthtwo maxlength="2" size="2" type="text" ng-model="numbers[0][3]"></div>
+  <div class="input-field col s1"><input lengthtwo maxlength="2" size="2" type="text" ng-model="numbers[0][4]"></div>
+  <div class="input-field col s1"><input lengthtwo maxlength="2" size="2" type="text" ng-model="numbers[0][5]"></div>
+  <div class="input-field col s1 red"><input lengthtwo maxlength="2" size="2" type="text" ng-model="numbers[0][6]"></div>
+  <div class="col s4">{messages[0]}</div>
+</div>
+<div class="row">
+  <div class="col s1">B</div>
+  <div class="input-field col s1"><input lengthtwo maxlength="2" size="2" type="text" ng-model="numbers[1][0]"></div>
+  <div class="input-field col s1"><input lengthtwo maxlength="2" size="2" type="text" ng-model="numbers[1][1]"></div>
+  <div class="input-field col s1"><input lengthtwo maxlength="2" size="2" type="text" ng-model="numbers[1][2]"></div>
+  <div class="input-field col s1"><input lengthtwo maxlength="2" size="2" type="text" ng-model="numbers[1][3]"></div>
+  <div class="input-field col s1"><input lengthtwo maxlength="2" size="2" type="text" ng-model="numbers[1][4]"></div>
+  <div class="input-field col s1"><input lengthtwo maxlength="2" size="2" type="text" ng-model="numbers[1][5]"></div>
+  <div class="input-field col s1 red"><input lengthtwo maxlength="2" size="2" type="text" ng-model="numbers[1][6]"></div>
+  <div class="col s4">{messages[1]}</div>
+</div>
+<div class="row">
+  <div class="col s1">C</div>
+  <div class="input-field col s1"><input lengthtwo maxlength="2" size="2" type="text" ng-model="numbers[2][0]"></div>
+  <div class="input-field col s1"><input lengthtwo maxlength="2" size="2" type="text" ng-model="numbers[2][1]"></div>
+  <div class="input-field col s1"><input lengthtwo maxlength="2" size="2" type="text" ng-model="numbers[2][2]"></div>
+  <div class="input-field col s1"><input lengthtwo maxlength="2" size="2" type="text" ng-model="numbers[2][3]"></div>
+  <div class="input-field col s1"><input lengthtwo maxlength="2" size="2" type="text" ng-model="numbers[2][4]"></div>
+  <div class="input-field col s1"><input lengthtwo maxlength="2" size="2" type="text" ng-model="numbers[2][2][5]"></div>
+  <div class="input-field col s1 red"><input lengthtwo maxlength="2" size="2" type="text" ng-model="numbers[2][6]"></div>
+  <div class="col s4">{messages[2]}</div>
+</div>
+<div class="row">
+  <div class="col s1">D</div>
+  <div class="input-field col s1"><input lengthtwo maxlength="2" size="2" type="text" ng-model="numbers[3][0]"></div>
+  <div class="input-field col s1"><input lengthtwo maxlength="2" size="2" type="text" ng-model="numbers[3][1]"></div>
+  <div class="input-field col s1"><input lengthtwo maxlength="2" size="2" type="text" ng-model="numbers[3][2]"></div>
+  <div class="input-field col s1"><input lengthtwo maxlength="2" size="2" type="text" ng-model="numbers[3][3]"></div>
+  <div class="input-field col s1"><input lengthtwo maxlength="2" size="2" type="text" ng-model="numbers[3][4]"></div>
+  <div class="input-field col s1"><input lengthtwo maxlength="2" size="2" type="text" ng-model="numbers[3][5]"></div>
+  <div class="input-field col s1 red"><input lengthtwo maxlength="2" size="2" type="text" ng-model="numbers[3][6]"></div>
+  <div class="col s4">{messages[3]}</div>
+</div>
+<div class="row">
+  <div class="col s1">E</div>
+  <div class="input-field col s1"><input maxlength="2" size="2" type="text" ng-model="numbers[4][0]"></div>
+  <div class="input-field col s1"><input maxlength="2" size="2" type="text" ng-model="numbers[4][1]"></div>
+  <div class="input-field col s1"><input maxlength="2" size="2" type="text" ng-model="numbers[4][2]"></div>
+  <div class="input-field col s1"><input maxlength="2" size="2" type="text" ng-model="numbers[4][3]"></div>
+  <div class="input-field col s1"><input maxlength="2" size="2" type="text" ng-model="numbers[4][4]"></div>
+  <div class="input-field col s1"><input maxlength="2" size="2" type="text" ng-model="numbers[4][5]"></div>
+  <div class="input-field col s1 red"><input lengthtwo maxlength="2" size="2" type="text" ng-model="numbers[4][6]"></div>
+  <div class="col s4">{messages[4]}</div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+<script>
+/* global angular */
+
+angular.module('app', [])
+  .controller('HomeCtrl', function ($scope, powerball) {
+    // $scope.winners = powerball.numbers()
+    $scope.numbers = [[], [], [], []]
+    $scope.messages = []
+  })
+
+  .factory('powerball', function ($http) {
+    var powerball = {}
+    powerball.numbers = function (startDate, endDate, count) {
+      startDate = startDate || 0
+      endDate = endDate || (new Date()).getTime()
+      count = count || 1
+      return $http.get('/numbers/' + startDate + '/' + endDate + '/' + count)
+    }
+    return powerball
+  })
+
+  .directive('lengthtwo', ['$parse', function ($parse) {
+    return {
+      restrict: 'A',
+      require: ['ngModel'],
+      link: function (scope, element, attrs, ctrls) {
+        var model = ctrls[0]
+
+        scope.next = function () {
+          return model.$valid
+        }
+
+        scope.$watch(scope.next, function (newValue, oldValue) {
+          if (newValue && model.$dirty) {
+            var nextinput = element.next('input')
+            if (nextinput.length === 2) {
+              nextinput[0].focus()
+            }
+          }
+        })
+      }
+    }
+  }])
+</script>

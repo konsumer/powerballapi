@@ -1,0 +1,30 @@
+{
+  "name": "powerballapi",
+  "version": "0.0.1",
+  "description": "A simple JSON server for powerball data",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konsumer/powerballapi.git"
+  },
+  "keywords": [
+    "powerball",
+    "api",
+    "rest",
+    "json"
+  ],
+  "author": "David Konsumer <konsumer@jetboystudio.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/konsumer/powerballapi/issues"
+  },
+  "homepage": "https://github.com/konsumer/powerballapi#readme",
+  "dependencies": {
+    "cors": "^2.7.1",
+    "express": "^4.13.3",
+    "powerball": "^0.1.5"
+  }
+}
