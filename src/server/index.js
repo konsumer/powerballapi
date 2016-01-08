@@ -40,7 +40,7 @@ app.get('/frequencies', (req, res) => {
 
 app.post('/check', (req, res) => {
   var now = Date.now
-  // look 1 week back
+  // TODO: actually calculate last lottery day for default and allow date input
   res.json(powerball.check(req.body.numbers, new Date(now - 6.048e+8), new Date(now), true, true))
 })
 
