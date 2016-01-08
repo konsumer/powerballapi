@@ -1,6 +1,6 @@
 @import 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css';
 
-.winners .row {
+winner .row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,4 +15,8 @@
   border-radius:  50%;
   border: 1px solid #000;
   margin: 1vw;
+}
+
+.check > .row {
+  margin-left: 5%;
 }

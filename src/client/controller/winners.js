@@ -1,5 +1,5 @@
 export default function winners_controller ($scope, powerball) {
-  powerball.numbers(1)
+  powerball.numbers()
     .then(n => {
       $scope.winners = n
     })
