@@ -1,0 +1,13 @@
+<div class="container winners">
+  <h2>winners</h2>
+  <div class="row" ng-repeat="winner in winners track by $index">
+    <div class="date col">{{winner.date | date : 'MM/dd/yy'}}</div>
+    <div class="ball col" ng-repeat="ball in winner.balls track by $index">
+      {{ball | zeroPad}}
+    </div>
+    <div ng-if="winner.powerplay" class="ball col red darken-4 white-text">
+      {{winner.powerplay | zeroPad}} &nbsp
+    </div>
+    <div ng-if="winner.powerplay" class="powerplay col">{{winner.powerplay}}</div>
+  </div>
+</div>
