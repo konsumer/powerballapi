@@ -1,5 +1,7 @@
 import angular from 'angular'
 import 'angular-ui-router'
+import 'angular-animate'
+import 'angular-material'
 
 import winners_controller from './controller/winners'
 import winners_template from './template/winners.html'
@@ -16,7 +18,7 @@ import powerball_factory from './factory/powerball'
 
 import zeroPad_filter from './filter/zeroPad'
 
-export default angular.module('app', ['ui.router'])
+export default angular.module('app', ['ui.router', 'ngMaterial'])
   .config(($stateProvider, $urlRouterProvider) => {
     $urlRouterProvider.otherwise('/check')
     $stateProvider
