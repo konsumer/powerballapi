@@ -1,11 +1,11 @@
 <div layout="row" layout-align="center center" class="winner">
   <div flex class="date">{{winner.date | date : 'MM/dd/yy'}}</div>
-  <div flex ng-repeat="ball in winner.balls track by $index">
+  <div flex ng-repeat="ball in winner.white track by $index">
     <div class="md-button md-fab" >{{ball | zeroPad}}</div>
   </div>
   <div flex>
     <div class="md-button md-fab md-warn">
-      {{winner.powerplay | zeroPad}} &nbsp
+      {{winner.red | zeroPad}} &nbsp
     </div>
   </div>
   <div flex>

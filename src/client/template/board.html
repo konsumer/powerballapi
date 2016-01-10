@@ -1,8 +1,8 @@
 <div class="board" layout="row" layout-align="center center">
   <h3 flex>{{label}}</h3>
   <md-input-container flex ng-repeat="(n, i) in numbers track by $index">
-    <div class="md-button md-fab">
-      <input autofocus blank-on-focus move-next-on-maxlength minlength="2" maxlength="2" min="1" ng-max="maxWhite" type="number" ng-model="numbers[n]">
+    <div class="md-button md-fab" ng-class="{'md-warn': n % 6 === 5}">
+      <input autofocus blank-on-focus move-next-on-maxlength="this.parent().parent().next().find('input')" minlength="2" maxlength="2" min="1" ng-max="maxWhite" type="number" ng-model="numbers[n]">
     </div>
   </md-input-container>
   <div flex></div>
