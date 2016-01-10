@@ -1,10 +1,14 @@
-<div class="row winner">
-  <div class="date col s1">{{winner.date | date : 'MM/dd/yy'}}</div>
-  <div class="ball col" ng-repeat="ball in winner.balls track by $index">
-    {{ball | zeroPad}}
+<div layout="row" layout-align="center center" class="winner">
+  <div flex class="date">{{winner.date | date : 'MM/dd/yy'}}</div>
+  <div flex ng-repeat="ball in winner.balls track by $index">
+    <div class="md-button md-fab" >{{ball | zeroPad}}</div>
   </div>
-  <div ng-if="winner.powerplay" class="ball col red darken-4 white-text">
-    {{winner.powerplay | zeroPad}} &nbsp
+  <div flex>
+    <div class="md-button md-fab md-warn">
+      {{winner.powerplay | zeroPad}} &nbsp
+    </div>
   </div>
-  <div ng-if="winner.powerplay" class="powerplay col">{{winner.powerplay}}</div>
+  <div flex>
+    <div ng-if="winner.powerplay" class="powerplay">X {{winner.powerplay}}</div>
+  </div>
 </div>

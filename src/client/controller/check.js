@@ -3,4 +3,11 @@ export default function check_controller ($scope, powerball) {
     .then(n => {
       $scope.winner = n[0]
     })
+
+  $scope.powerplay = false
+  $scope.setPowerPlay = () => {
+    $scope.powerplay = !$scope.powerplay
+  }
+
+  $scope.winnings = 0
 }

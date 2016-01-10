@@ -5,7 +5,7 @@ export default function board_directive ($interval, powerball) {
     $scope.maxWhite = $scope.oldRules ? 59 : 69
     $scope.maxRed = $scope.oldRules ? 36 : 26
 
-    $scope.numbers = []
+    $scope.numbers = [null, null, null, null, null, null]
 
     $element.on('keyup', function () {
       if ($scope.numbers.length === 6) {

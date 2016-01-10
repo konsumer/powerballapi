@@ -1,7 +1,9 @@
-<div class="container check">
+<div class="check layout-content">
   <h2>check</h2>
+  <h4 class="winnings">{{winnings | currency}}</h4>
+  <md-checkbox flex ng-checked="powerplay" ng-click="setPowerPlay(selected)">powerplay</md-checkbox>
   <winner winner="winner"></winner>
-  <div class="row">
+  <div layout="column">
     <board label="A" numbers="numbers[0]" oldRules="false"></board>
     <board label="B" numbers="numbers[1]" oldRules="false"></board>
     <board label="C" numbers="numbers[2]" oldRules="false"></board>

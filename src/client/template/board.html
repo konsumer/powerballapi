@@ -1,21 +1,9 @@
-<div class="board row">
-  <h3 class="col s1 teal white-text">{{label}}</h1>
-  <md-input-container class="col ball" >
-    <input autofocus blank-on-focus move-next-on-maxlength class="validate" minlength="2" maxlength="2" min="1" ng-max="maxWhite" type="number" ng-model="numbers[0]">
+<div class="board" layout="row" layout-align="center center">
+  <h3 flex>{{label}}</h3>
+  <md-input-container flex ng-repeat="(n, i) in numbers track by $index">
+    <div class="md-button md-fab">
+      <input autofocus blank-on-focus move-next-on-maxlength minlength="2" maxlength="2" min="1" ng-max="maxWhite" type="number" ng-model="numbers[n]">
+    </div>
   </md-input-container>
-  <md-input-container class="col ball" >
-    <input autofocus blank-on-focus move-next-on-maxlength class="validate" minlength="2" maxlength="2" min="1" ng-max="maxWhite" type="number" ng-model="numbers[1]">
-  </md-input-container>
-  <md-input-container class="col ball" >
-    <input autofocus blank-on-focus move-next-on-maxlength class="validate" minlength="2" maxlength="2" min="1" ng-max="maxWhite" type="number" ng-model="numbers[2]">
-  </md-input-container>
-  <md-input-container class="col ball" >
-    <input autofocus blank-on-focus move-next-on-maxlength class="validate" minlength="2" maxlength="2" min="1" ng-max="maxWhite" type="number" ng-model="numbers[3]">
-  </md-input-container>
-  <md-input-container class="col ball" >
-    <input autofocus blank-on-focus move-next-on-maxlength class="validate" minlength="2" maxlength="2" min="1" ng-max="maxWhite" type="number" ng-model="numbers[4]">
-  </md-input-container>
-  <md-input-container class="col ball red darken-4" >
-    <input autofocus blank-on-focus move-next-on-maxlength class="validate" minlength="2" maxlength="2" min="1" ng-max="maxWhite" type="number" ng-model="numbers[5]">
-  </md-input-container>
+  <div flex></div>
 </div>
