@@ -20,7 +20,11 @@ api.get('/balls', (req, res) => {
 })
 
 api.get('/numbers', (req, res) => {
-  res.json(winner_cache)
+  if (!req.query.count) {
+    res.json(winner_cache)
+  } else {
+    res.json(winner_cache.slice(-1 * req.query.count))
+  }
 })
 
 api.get('/frequencies', (req, res) => {

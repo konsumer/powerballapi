@@ -14,8 +14,6 @@ import moveNextOnMaxlength_directive from './directive/moveNextOnMaxlength'
 import blankOnFocus_directive from './directive/blankOnFocus'
 import winner_directive from './directive/winner'
 
-import powerball_factory from './factory/powerball'
-
 import zeroPad_filter from './filter/zeroPad'
 
 export default angular.module('app', ['ui.router', 'ngMaterial'])
@@ -33,7 +31,6 @@ export default angular.module('app', ['ui.router', 'ngMaterial'])
         controller: check_controller
       })
   })
-  .factory('powerball', powerball_factory)
   .filter('zeroPad', zeroPad_filter)
   .directive('board', board_directive)
   .directive('winner', winner_directive)
